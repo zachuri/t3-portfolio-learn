@@ -3,6 +3,7 @@ import Head from "next/head";
 import AboutMe from "../components/aboutme";
 import Masthead from "../components/masthead";
 import Offer from "../components/offer";
+import Works from "../components/works";
 
 const Home: NextPage = () => {
 	return (
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
 			<Masthead />
 			<AboutMe />
 			<Offer />
+			<Works />
 		</>
 	);
 };
