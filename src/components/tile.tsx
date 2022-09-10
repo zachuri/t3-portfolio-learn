@@ -38,8 +38,15 @@ export const TileWrapper: React.FC<WrapperProps> = ({
 	}
 
 	return (
+		// This is what adds the parallax effect
+
 		<TileContext.Provider value={{ numOfPages, currentPage }}>
-			<div ref={refContainer} className="relative bg-black text-white">
+			<div
+				ref={refContainer}
+				className="relative bg-black text-white"
+				// Will scroll through each page by its height
+				style={{ height: numOfPages * 100 + "vh" }}
+			>
 				{children}
 			</div>
 		</TileContext.Provider>
@@ -70,13 +77,14 @@ export const Tile: React.FC<Props> = ({ page, renderContent }) => {
 	if (progress > 0.85 && page < numOfPages - 1) {
 		opacity = Math.max(0, (1.0 - progress) * 4);
 	}
-
+	//
 	return (
 		<div
 			ref={refContainer}
 			className="absolute top-0 w-full"
 			style={{
-				pointerEvents: progress >= 0 || progress >= 1 ? "none" : undefined, opacity
+				pointerEvents: progress >= 0 || progress >= 1 ? "none" : undefined,
+				opacity,
 			}}
 		>
 			{renderContent({ progress })}

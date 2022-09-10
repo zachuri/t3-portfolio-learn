@@ -15,9 +15,9 @@ const Home: NextPage = () => {
 			</Head>
 
 			<Masthead />
-			<AboutMe />
 			<Offer />
 			<Works />
+			<AboutMe />
 		</>
 	);
 };
