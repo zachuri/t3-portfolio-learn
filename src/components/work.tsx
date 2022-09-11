@@ -11,7 +11,7 @@ export const WorkContainer: React.FC = ({ children }) => {
 
 export const WorkBackground: React.FC = () => {
 	return (
-		<div className="grid grid-cols-1 lg:grid-cols-2 w-full min-h-screen top-9 sticky">
+		<div className="grid grid-cols-1 lg:grid-cols-2 w-full min-h-screen top-0 sticky">
 			<div className="bg-black h-[30vh] lg:h-auto"></div>
 			<div className="bg-white h-[70vh] lg:min-h-screen"></div>
 		</div>
@@ -41,16 +41,34 @@ export const WorkRight: React.FC<{ progress: number }> = ({
 	children,
 	progress,
 }) => {
-	const translate = Math.max(-50, -(progress - 0.5) * 50);
+	const translateY = Math.max(-50, -(progress - 0.5) * 50);
 
 	return (
 		<div
-			className="flex flex-1 lg:tiems-center justify-cetner h-screen"
-			style={{ transform: `translateY(${translate}px)` }}
+			className="flex flex-1 lg:items-center justify-center h-screen"
+			style={{ transform: `translateY(${translateY}px)` }}
 		>
 			<div className="w-full max-w-md pt-10 lg:pt-0 px-10 md:px-0">
 				{children}
 			</div>
 		</div>
+	);
+};
+
+interface LinkProps {
+	href: string;
+}
+
+export const WorkLink: React.FC<LinkProps> = ({ href, children }) => {
+	return (
+		<Link href={href}>
+			<a
+				target="_blank"
+				rel="noreferrer"
+				className="underline underline-offset-8 decoration-1"
+			>
+				{children}
+			</a>
+		</Link>
 	);
 };
