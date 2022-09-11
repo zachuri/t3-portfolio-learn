@@ -19,7 +19,7 @@ const AboutMe: React.FC = () => {
 			</div>
 			<div className="conainter mx-auto px-11 text-center mt-28">
 				<h2>Skills</h2>
-				<div className="mt-10 grid grid-cols-3 md:grid-cols-5 lg:grid-cols-5 xl:grid-cols-5 gap-6 lg:gap-20">
+				<div className="mt-10 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 gap-6 lg:gap-20">
 					<Skills id="nextjs" name="Next JS" />
 					<Skills id="react" name="React JS" />
 					<Skills id="java" name="Java" />
