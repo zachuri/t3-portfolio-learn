@@ -22,7 +22,10 @@ const SliderContainer: React.FC<Props> = ({
 	const enabled = innerWidth < contentWidth;
 
 	return (
-		<div ref={refContainer} className={`"slider-container overflow-x-hidden whitespace-nowrap max-w-full pointer-events-none ${className}"`}>
+		<div
+			ref={refContainer}
+			className={`"slider-container overflow-x-hidden whitespace-nowrap max-w-full pointer-events-none ${className}"`}
+		>
 			<div ref={refContainer} className="inline-block">
 				{children}
 			</div>
@@ -30,8 +33,4 @@ const SliderContainer: React.FC<Props> = ({
 	);
 };
 
-const Slider = () => {
-	return <div>slider</div>;
-};
-
-export default Slider;
+export default SliderContainer;
