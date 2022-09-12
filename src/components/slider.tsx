@@ -33,4 +33,17 @@ const SliderContainer: React.FC<Props> = ({
 	);
 };
 
+interface ItemProps {
+	width: number;
+}
+
+export const SliderItem: React.FC<ItemProps> = ({ children, width }) => {
+	<div
+		className="inline-flex justify-center items-center mx-4"
+		style={{ width }}
+	>
+		{children}
+	</div>;
+};
+
 export default SliderContainer;
