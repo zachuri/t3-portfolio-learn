@@ -26,7 +26,7 @@ const SliderContainer: React.FC<Props> = ({
 			ref={refContainer}
 			className={`"slider-container overflow-x-hidden whitespace-nowrap max-w-full pointer-events-none ${className}"`}
 		>
-			<div ref={refContainer} className="inline-block">
+			<div ref={refContent} className="inline-block">
 				{children}
 			</div>
 		</div>
@@ -38,12 +38,14 @@ interface ItemProps {
 }
 
 export const SliderItem: React.FC<ItemProps> = ({ children, width }) => {
-	<div
-		className="inline-flex justify-center items-center mx-4"
-		style={{ width }}
-	>
-		{children}
-	</div>;
+	return (
+		<div
+			className="inline-flex justify-center items-center mx-4"
+			style={{ width }}
+		>
+			{children}
+		</div>
+	);
 };
 
 export default SliderContainer;
