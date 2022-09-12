@@ -35,6 +35,33 @@ const ClientLogos: React.FC = () => {
 						alt="amazon"
 					/>
 				</SliderItem>
+				<SliderItem width={150}>
+					<Image
+						src="/assets/trustedby/aws.png"
+						width={150}
+						height={50}
+						objectFit="contain"
+						alt="aws"
+					/>
+				</SliderItem>
+				<SliderItem width={150}>
+					<Image
+						src="/assets/trustedby/oracle.png"
+						width={150}
+						height={50}
+						objectFit="contain"
+						alt="oracle"
+					/>
+				</SliderItem>
+				<SliderItem width={150}>
+					<Image
+						src="/assets/trustedby/showtime.png"
+						width={150}
+						height={50}
+						objectFit="contain"
+						alt="showtime"
+					/>
+				</SliderItem>
 			</SliderContainer>
 		</>
 	);

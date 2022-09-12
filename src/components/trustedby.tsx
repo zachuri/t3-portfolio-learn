@@ -1,5 +1,6 @@
 import React from "react";
-import ClientLogos from "./client-logos";
+import ClientLogos1 from "./client-logos-1";
+import ClientLogos2 from "./client-logos-2";
 
 const TrustedBy: React.FC = () => {
 	return (
@@ -12,7 +13,8 @@ const TrustedBy: React.FC = () => {
 						some of the apps you use daily
 					</span>
 				</h3>
-				<ClientLogos />
+				<ClientLogos1 />
+				<ClientLogos2 />
 			</div>
 			<div className="flex flex-col justify-center itesm-center">
 				<div className="container mx-auto lg:max-w[70%] lg:px-10">
