@@ -18,6 +18,12 @@ const Testimonials: React.FC = () => {
 					software and the passion for building something people want.
 				</Review>
 			</CarouselItem>
+			<CarouselItem index={2}>
+				<Review by="Axel (Showtime)">
+					Margelo and Showtime both share the love for high-quality
+					software and the passion for building something people want.
+				</Review>
+			</CarouselItem>
 		</Carousel>
 	);
 };
