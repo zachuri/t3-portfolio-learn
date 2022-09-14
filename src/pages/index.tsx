@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import AboutMe from "../components/aboutme";
 import ContactUs from "../components/contactus";
+import Footer from "../components/footer";
 import Masthead from "../components/masthead";
 import Offer from "../components/offer";
 import TrustedBy from "../components/trustedby";
@@ -22,6 +23,7 @@ const Home: NextPage = () => {
       <Works />
       <TrustedBy />
       <ContactUs />
+      <Footer />
     </>
   );
 };
