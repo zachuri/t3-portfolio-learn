@@ -32,14 +32,14 @@ const Carousel: React.FC<Props> = ({ children, className }) => {
 	);
 
 	const onSelect = useCallback(() => {
-		if (!emblaApi) {
-			return setSelectedIndex(emblaApi?.setSelectedIndex());
+		if (!emblaApi && emblaApi != undefined) {
+			return setSelectedIndex(emblaApi.setSelectedIndex());
 		}
 	}, [emblaApi, setSelectedIndex]);
 
 	useEffect(() => {
-		if (!emblaApi) {
-			return onSelect(), emblaApi?.on("select", onSelect);
+		if (!emblaApi && emblaApi != undefined) {
+			return onSelect(), emblaApi.on("select", onSelect);
 		}
 	}, [emblaApi, onSelect]);
 
