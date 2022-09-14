@@ -5,7 +5,7 @@ import SliderContainer, { SliderItem } from "./slider";
 const ClientLogos: React.FC = () => {
 	return (
 		<>
-			<SliderContainer className="" contentWidth={1290} initialOffsetX={0}>
+			<SliderContainer className="" contentWidth={1062} initialOffsetX={0}>
 				<SliderItem width={150}>
 					<Image
 						src="/assets/trustedby/amazon.png"
