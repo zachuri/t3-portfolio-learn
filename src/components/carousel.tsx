@@ -32,13 +32,13 @@ const Carousel: React.FC<Props> = ({ children, className }) => {
 	);
 
 	const onSelect = useCallback(() => {
-		if (!emblaApi && emblaApi != undefined) {
+		if (!emblaApi && emblaApi !== undefined) {
 			return setSelectedIndex(emblaApi.setSelectedIndex());
 		}
 	}, [emblaApi, setSelectedIndex]);
 
 	useEffect(() => {
-		if (!emblaApi && emblaApi != undefined) {
+		if (!emblaApi && emblaApi !== undefined) {
 			return onSelect(), emblaApi.on("select", onSelect);
 		}
 	}, [emblaApi, onSelect]);
@@ -49,7 +49,7 @@ const Carousel: React.FC<Props> = ({ children, className }) => {
 				ref={viewportRef}
 				className={`${styles.viewport} w-full overflow-hidden ${className}`}
 			>
-				<div className={`${styles.container}`}>{children}</div>
+				<div className={`${styles.container} flex`}>{children}</div>
 			</div>
 		</CarouselContext.Provider>
 	);
