@@ -1,6 +1,7 @@
 import React from "react";
 import ClientLogos1 from "./client-logos-1";
 import ClientLogos2 from "./client-logos-2";
+import Testimonials from "./testimonials";
 
 const TrustedBy: React.FC = () => {
 	return (
@@ -25,6 +26,7 @@ const TrustedBy: React.FC = () => {
 				</div>
 			</div>
 			{/* flex-1 sets how a flex item wil grow or shrink to fit the space available */}
+			<Testimonials />
 			<div className="flex-1 bg-black"></div>
 		</section>
 	);
