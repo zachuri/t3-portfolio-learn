@@ -3,7 +3,7 @@ import Head from "next/head";
 import AboutMe from "../components/aboutme";
 import Masthead from "../components/masthead";
 import Offer from "../components/offer";
-import TrustedBY from "../components/trustedby";
+import TrustedBy from "../components/trustedby";
 import Works from "../components/works";
 
 const Home: NextPage = () => {
@@ -19,7 +19,7 @@ const Home: NextPage = () => {
 			<AboutMe />
 			<Offer />
 			<Works />
-			<TrustedBY />
+			<TrustedBy />
 		</>
 	);
 };

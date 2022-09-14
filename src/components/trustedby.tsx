@@ -27,7 +27,7 @@ const TrustedBy: React.FC = () => {
 			</div>
 			{/* flex-1 sets how a flex item wil grow or shrink to fit the space available */}
 			<Testimonials />
-			<div className="flex-1 bg-black"></div>
+			<div className="flex-1 bg-white"></div>
 		</section>
 	);
 };
