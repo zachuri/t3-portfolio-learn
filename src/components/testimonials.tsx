@@ -14,7 +14,7 @@ const Testimonials: React.FC = () => {
       </CarouselItem>
       <CarouselItem index={1}>
         <Review by="Mitch Hodge (Photographer)">
-          At first, I wasn't sure whether any of my photos were good
+          At first, I wasn&apos;t sure whether any of my photos were good
           enough comparison to the other photos I saw on the site, but I
           uploaded a few anyway. I was quite startled to see how many
           views and downlaods my first uploads got in their first 24
